@@ -1,0 +1,142 @@
+@font-face {
+  font-family: 'Vida31Pro';
+  src: url(../fonts/vida31pro.otf);
+  font-weight: normal; }
+
+@font-face {
+  font-family: 'Vida33Pro';
+  src: url(../fonts/vida33pro.otf);
+  font-weight: normal; }
+
+@media (max-width: 768px) {
+  .hide768 {
+    display: none !important; }
+  .slider {
+    display: block; }
+  .mobileMButton {
+    display: block;
+    margin-left: 30px; }
+  .top-line {
+    padding: 25px 40px 25px 40px;
+    position: relative; }
+    .top-line .second-column {
+      justify-content: flex-end; }
+      .top-line .second-column .mMenu {
+        position: absolute;
+        left: 40px;
+        z-index: 22;
+        background-color: #FFF;
+        width: 90%;
+        top: 130px; }
+        .top-line .second-column .mMenu ul {
+          padding: 0;
+          margin-bottom: 170px; }
+          .top-line .second-column .mMenu ul li {
+            margin-bottom: 25px; }
+            .top-line .second-column .mMenu ul li a {
+              font-size: 24px; }
+        .top-line .second-column .mMenu .compare {
+          margin-bottom: 40px; }
+          .top-line .second-column .mMenu .compare a {
+            font-size: 24px; }
+          .top-line .second-column .mMenu .compare img {
+            width: 27px;
+            height: 18px; }
+        .top-line .second-column .mMenu .personal-account {
+          font-size: 24px;
+          margin-bottom: 70px;
+          display: block; }
+        .top-line .second-column .mMenu .phone span {
+          font-size: 40px;
+          margin-right: 40px; }
+  .banner .container-info {
+    padding-left: 40px; }
+  .main {
+    flex-direction: column;
+    padding-left: 40px;
+    padding-right: 35px; }
+    .main .sidebar {
+      width: 100%;
+      border: none;
+      min-height: 100%; }
+      .main .sidebar .sidrebar-menu li {
+        display: none; }
+      .main .sidebar .sidrebar-menu .mobile-sidebar-link {
+        display: block;
+        position: relative; }
+        .main .sidebar .sidrebar-menu .mobile-sidebar-link #counter {
+          top: 0;
+          left: 120px; }
+        .main .sidebar .sidrebar-menu .mobile-sidebar-link .select-option {
+          width: 100%;
+          padding: 10px 25px;
+          border-radius: 20px; }
+      .main .sidebar .apartments-container {
+        display: flex;
+        padding: 0;
+        justify-content: space-between; }
+        .main .sidebar .apartments-container .apartments-item {
+          border-top: none;
+          position: relative; }
+    .main .content {
+      width: 100%;
+      padding: 0;
+      margin: 0; }
+      .main .content .news-item .news-title {
+        max-width: 480px; }
+      .main .content .news-item .news-content {
+        max-width: 580px; }
+  .news-section .news-container {
+    padding-left: 50px; }
+  .footer {
+    padding-left: 35px;
+    padding-right: 100px;
+    justify-content: space-between; }
+    .footer .category-container {
+      max-width: 300px; }
+    .footer .contact-container {
+      max-width: 250px;
+      margin-right: 0; }
+      .footer .contact-container .social-block {
+        margin-bottom: 25px; }
+      .footer .contact-container .contact-info .street {
+        margin-bottom: 25px; }
+    .footer .category-container {
+      max-width: 300px;
+      flex-wrap: wrap; }
+      .footer .category-container .category-column .container-links ul {
+        margin-right: 50px;
+        margin-bottom: 40px; } }
+
+@media (max-width: 640px) {
+  .hide640 {
+    display: none !important; }
+  .main .content .news-item .news-title {
+    max-width: 430px; }
+  .main .content .news-item .news-content {
+    max-width: 460px; }
+  .footer {
+    flex-direction: column;
+    padding-left: 35px;
+    padding-right: 35px; }
+    .footer .contact-container {
+      margin-bottom: 30px; }
+    .footer .mobile-category-container {
+      display: block; }
+      .footer .mobile-category-container .mobile-category-tab {
+        padding-bottom: 15px;
+        border-bottom: 1px solid rgba(83, 86, 90, 0.1);
+        margin-bottom: 15px; }
+        .footer .mobile-category-container .mobile-category-tab .mobile-category-title {
+          display: flex;
+          justify-content: space-between;
+          align-items: center; }
+          .footer .mobile-category-container .mobile-category-tab .mobile-category-title span {
+            font-family: "Vida33Pro";
+            color: #000; }
+          .footer .mobile-category-container .mobile-category-tab .mobile-category-title .open-category {
+            transform: rotate(180deg); }
+        .footer .mobile-category-container .mobile-category-tab .mobile-category-content {
+          display: none; }
+        .footer .mobile-category-container .mobile-category-tab .mobile-category-open {
+          display: block !important; } }

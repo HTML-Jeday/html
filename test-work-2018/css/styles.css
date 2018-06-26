@@ -1,0 +1,503 @@
+@font-face {
+  font-family: 'Vida31Pro';
+  src: url(../fonts/vida31pro.otf);
+  font-weight: normal; }
+
+@font-face {
+  font-family: 'Vida33Pro';
+  src: url(../fonts/vida33pro.otf);
+  font-weight: normal; }
+
+a, a:hover {
+  font-size: 14px;
+  color: #893b67;
+  text-decoration: none; }
+
+.slick-initialized .slick-slide {
+  margin-right: 70px; }
+
+.select-option {
+  border: 1px solid rgba(83, 86, 90, 0.2);
+  border-radius: 14px;
+  padding: 3px 10px; }
+
+ul li {
+  list-style-type: none; }
+
+body {
+  font-family: "Vida31Pro";
+  position: relative; }
+
+.overlay {
+  background-color: #FFF;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 22;
+  bottom: 0;
+  width: 100%;
+  height: 100%; }
+
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto; }
+
+.mMenu, .mobileMButton, .mobile-category-container, .overlay, .slider {
+  display: none; }
+
+.mobileMButton {
+  z-index: 22; }
+
+#counter {
+  position: absolute;
+  background-color: #893b67;
+  color: #FFF;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  border-radius: 10px; }
+
+.top-line {
+  display: flex;
+  padding: 25px 60px 25px 40px;
+  justify-content: space-between; }
+  .top-line .logo {
+    margin-right: 40px;
+    z-index: 22;
+    position: relative; }
+
+.menu {
+  align-self: center;
+  width: 440px; }
+  .menu ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between; }
+  .menu li {
+    list-style-type: none; }
+
+.second-column {
+  width: 500px;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  align-items: center; }
+  .second-column .compare {
+    position: relative; }
+    .second-column .compare #counter {
+      top: -10px;
+      left: 10px; }
+    .second-column .compare img {
+      margin-right: 10px;
+      position: relative; }
+      .second-column .compare img:before {
+        position: absolute;
+        content: '3';
+        top: 0;
+        width: 20px;
+        height: 20px;
+        right: 0;
+        background-color: #000; }
+
+.phone {
+  display: flex;
+  align-items: center; }
+  .phone .phone-icon {
+    position: relative;
+    cursor: pointer; }
+  .phone span {
+    color: #565f66;
+    font-family: "Vida33Pro";
+    margin-right: 20px;
+    font-size: 18px; }
+
+.ring {
+  position: absolute;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  animation: pulse 8s ease-out infinite; }
+  .ring.ring-2 {
+    animation-delay: 2000ms; }
+  .ring.ring-3 {
+    animation-delay: 4000ms; }
+  .ring.ring-4 {
+    animation-delay: 6000ms; }
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 2px #893b67;
+    transform: scale(0);
+    opacity: 0; }
+  25% {
+    box-shadow: 0 0 0 2px rgba(137, 59, 103, 0.66);
+    opacity: 1; }
+  50% {
+    box-shadow: 0 0 0 2px rgba(137, 59, 103, 0.33); }
+  100% {
+    box-shadow: 0 0 0 2px rgba(137, 59, 103, 0);
+    transform: scale(1.5); } }
+
+.first-column, .second-column {
+  display: flex; }
+
+.banner {
+  background: url(../images/bg.png) no-repeat;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  height: 232px; }
+  .banner .container-info {
+    position: relative;
+    height: 100%;
+    padding-left: 94px; }
+  .banner .item-info {
+    position: absolute;
+    bottom: 0;
+    font-family: "Vida33Pro";
+    color: #000; }
+    .banner .item-info .adress {
+      padding: 10px 0;
+      color: #777b80;
+      font-size: 18px; }
+    .banner .item-info .adress, .banner .item-info .title-item {
+      background-color: #FFF;
+      padding-left: 20px;
+      padding-right: 20px; }
+    .banner .item-info .title-item {
+      margin: 0;
+      color: #414141;
+      font-size: 48px;
+      line-height: 50px;
+      padding-top: 10px; }
+
+.main {
+  padding-top: 60px;
+  padding-bottom: 50px;
+  padding-left: 94px;
+  display: flex; }
+  .main .sidebar {
+    min-height: 1024px;
+    border-right: 1px solid rgba(145, 145, 145, 0.1);
+    width: 30%; }
+    .main .sidebar ul {
+      padding-left: 20px; }
+      .main .sidebar ul .active {
+        border: 1px solid rgba(83, 86, 90, 0.2);
+        border-radius: 20px;
+        max-width: 280px;
+        position: relative; }
+        .main .sidebar ul .active #counter {
+          top: -2px;
+          right: -5px; }
+      .main .sidebar ul .mobile-sidebar-link {
+        display: none; }
+      .main .sidebar ul li {
+        margin-bottom: 32px; }
+        .main .sidebar ul li a {
+          width: 280px;
+          display: block;
+          padding: 8px 25px;
+          font-size: 16px; }
+    .main .sidebar .apartments-container {
+      padding: 0 20px; }
+      .main .sidebar .apartments-container .apartments-item {
+        display: flex;
+        flex-wrap: wrap;
+        border-top: 1px solid rgba(83, 86, 90, 0.2);
+        padding: 40px 0;
+        padding-left: 20px; }
+        .main .sidebar .apartments-container .apartments-item .appartments-title {
+          flex-basis: 100%;
+          margin-bottom: 5px; }
+          .main .sidebar .apartments-container .apartments-item .appartments-title a {
+            color: #893b67;
+            font-family: "Vida33Pro";
+            font-size: 24px; }
+        .main .sidebar .apartments-container .apartments-item .appartments-content {
+          flex-basis: 65%;
+          font-size: 16px;
+          color: #000;
+          font-weihgt: 400; }
+        .main .sidebar .apartments-container .apartments-item .link-more {
+          flex-basis: 35%;
+          color: #893b67;
+          font-family: "Vida33Pro";
+          font-size: 14px; }
+          .main .sidebar .apartments-container .apartments-item .link-more img {
+            margin-left: 5px; }
+  .main .content {
+    margin-left: 40px;
+    width: 70%; }
+    .main .content .title-category {
+      color: #414141;
+      font-family: "Vida33Pro";
+      font-size: 36px;
+      font-weight: 400;
+      margin-bottom: 40px; }
+    .main .content .open .news-content {
+      display: block !important; }
+    .main .content .news-item {
+      padding: 25px;
+      width: 100%;
+      border: 1px solid rgba(83, 86, 90, 0.2);
+      border-radius: 8px;
+      margin-bottom: 20px;
+      position: relative; }
+      .main .content .news-item .toggleBtn {
+        position: absolute;
+        right: 30px;
+        top: 40px; }
+      .main .content .news-item .news-date {
+        background-color: #edeeee;
+        border-radius: 2px;
+        padding: 2px 5px;
+        font-size: 16px;
+        font-weight: 400; }
+      .main .content .news-item .news-content {
+        max-width: 700px;
+        display: none; }
+
+.news-section {
+  background-color: rgba(83, 86, 90, 0.1);
+  min-height: 156px;
+  width: 100%;
+  padding: 30px 0; }
+  .news-section .news-container {
+    display: flex;
+    padding-left: 155px;
+    -webkit-justify-content: space-between;
+    justify-content: space-between; }
+    .news-section .news-container .news-feed-block {
+      max-width: 222px;
+      font-size: 14px; }
+      .news-section .news-container .news-feed-block .news-feed-title {
+        display: flex; }
+        .news-section .news-container .news-feed-block .news-feed-title .news-feed-date {
+          margin-right: 10px;
+          color: rgba(0, 0, 0, 0.4); }
+        .news-section .news-container .news-feed-block .news-feed-title .news-feed-status {
+          background-color: #FFF;
+          padding: 2px 7px;
+          text-transform: uppercase; }
+        .news-section .news-container .news-feed-block .news-feed-title .active-status {
+          background-color: transparent;
+          background: url(/images/active-status.png) no-repeat;
+          font-family: "Vida33Pro";
+          color: #000;
+          background-size: cover;
+          width: 80px;
+          text-align: center;
+          height: 20px; }
+      .news-section .news-container .news-feed-block .news-feed-content {
+        margin-top: 10px;
+        color: #000; }
+
+.news-feed-block {
+  max-width: 222px;
+  font-size: 14px; }
+  .news-feed-block .news-feed-title {
+    display: flex; }
+    .news-feed-block .news-feed-title .news-feed-date {
+      margin-right: 10px;
+      color: rgba(0, 0, 0, 0.4); }
+    .news-feed-block .news-feed-title .news-feed-status {
+      background-color: #FFF;
+      padding: 2px 7px;
+      text-transform: uppercase; }
+    .news-feed-block .news-feed-title .active-status {
+      background-color: transparent;
+      background: url(/images/active-status.png) no-repeat;
+      font-family: "Vida33Pro";
+      color: #000;
+      background-size: cover;
+      width: 80px;
+      text-align: center;
+      height: 20px; }
+  .news-feed-block .news-feed-content {
+    margin-top: 10px;
+    color: #000; }
+
+.footer {
+  min-height: 290px;
+  width: 100%;
+  padding: 40px 0 40px 140px;
+  display: flex; }
+  .footer .contact-container {
+    margin-right: 180px; }
+    .footer .contact-container .social-block {
+      margin-bottom: 40px; }
+      .footer .contact-container .social-block a {
+        margin-right: 20px; }
+        .footer .contact-container .social-block a i {
+          font-size: 18px; }
+    .footer .contact-container .phone {
+      margin-bottom: 15px; }
+      .footer .contact-container .phone span {
+        color: #424242;
+        font-size: 24px; }
+    .footer .contact-container .contact-info .street {
+      color: #424242; }
+  .footer .category-container {
+    display: flex; }
+    .footer .category-container .category-column .category-title {
+      font-family: "Vida33Pro";
+      margin: 0;
+      margin-bottom: 20px; }
+    .footer .category-container .category-column .container-links {
+      display: flex; }
+      .footer .category-container .category-column .container-links ul {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        margin-right: 80px;
+        flex-direction: column; }
+        .footer .category-container .category-column .container-links ul li {
+          margin-bottom: 10px; }
+
+@font-face {
+  font-family: 'Vida31Pro';
+  src: url(../fonts/vida31pro.otf);
+  font-weight: normal; }
+
+@font-face {
+  font-family: 'Vida33Pro';
+  src: url(../fonts/vida33pro.otf);
+  font-weight: normal; }
+
+@media (max-width: 768px) {
+  .hide768 {
+    display: none !important; }
+  .slider {
+    display: block; }
+  .mobileMButton {
+    display: block;
+    margin-left: 30px; }
+  .top-line {
+    padding: 25px 40px 25px 40px;
+    position: relative; }
+    .top-line .second-column {
+      justify-content: flex-end; }
+      .top-line .second-column .mMenu {
+        position: absolute;
+        left: 40px;
+        z-index: 22;
+        background-color: #FFF;
+        width: 90%;
+        top: 130px; }
+        .top-line .second-column .mMenu ul {
+          padding: 0;
+          margin-bottom: 170px; }
+          .top-line .second-column .mMenu ul li {
+            margin-bottom: 25px; }
+            .top-line .second-column .mMenu ul li a {
+              font-size: 24px; }
+        .top-line .second-column .mMenu .compare {
+          margin-bottom: 40px; }
+          .top-line .second-column .mMenu .compare a {
+            font-size: 24px; }
+          .top-line .second-column .mMenu .compare img {
+            width: 27px;
+            height: 18px; }
+        .top-line .second-column .mMenu .personal-account {
+          font-size: 24px;
+          margin-bottom: 70px;
+          display: block; }
+        .top-line .second-column .mMenu .phone span {
+          font-size: 40px;
+          margin-right: 40px; }
+  .banner .container-info {
+    padding-left: 40px; }
+  .main {
+    flex-direction: column;
+    padding-left: 40px;
+    padding-right: 35px; }
+    .main .sidebar {
+      width: 100%;
+      border: none;
+      min-height: 100%; }
+      .main .sidebar .sidrebar-menu li {
+        display: none; }
+      .main .sidebar .sidrebar-menu .mobile-sidebar-link {
+        display: block;
+        position: relative; }
+        .main .sidebar .sidrebar-menu .mobile-sidebar-link #counter {
+          top: 0;
+          left: 120px; }
+        .main .sidebar .sidrebar-menu .mobile-sidebar-link .select-option {
+          width: 100%;
+          padding: 10px 25px;
+          border-radius: 20px; }
+      .main .sidebar .apartments-container {
+        display: flex;
+        padding: 0;
+        justify-content: space-between; }
+        .main .sidebar .apartments-container .apartments-item {
+          border-top: none;
+          position: relative; }
+    .main .content {
+      width: 100%;
+      padding: 0;
+      margin: 0; }
+      .main .content .news-item .news-title {
+        max-width: 480px; }
+      .main .content .news-item .news-content {
+        max-width: 580px; }
+  .news-section .news-container {
+    padding-left: 50px; }
+  .footer {
+    padding-left: 35px;
+    padding-right: 100px;
+    justify-content: space-between; }
+    .footer .category-container {
+      max-width: 300px; }
+    .footer .contact-container {
+      max-width: 250px;
+      margin-right: 0; }
+      .footer .contact-container .social-block {
+        margin-bottom: 25px; }
+      .footer .contact-container .contact-info .street {
+        margin-bottom: 25px; }
+    .footer .category-container {
+      max-width: 300px;
+      flex-wrap: wrap; }
+      .footer .category-container .category-column .container-links ul {
+        margin-right: 50px;
+        margin-bottom: 40px; } }
+
+@media (max-width: 640px) {
+  .hide640 {
+    display: none !important; }
+  .main .content .news-item .news-title {
+    max-width: 430px; }
+  .main .content .news-item .news-content {
+    max-width: 460px; }
+  .footer {
+    flex-direction: column;
+    padding-left: 35px;
+    padding-right: 35px; }
+    .footer .contact-container {
+      margin-bottom: 30px; }
+    .footer .mobile-category-container {
+      display: block; }
+      .footer .mobile-category-container .mobile-category-tab {
+        padding-bottom: 15px;
+        border-bottom: 1px solid rgba(83, 86, 90, 0.1);
+        margin-bottom: 15px; }
+        .footer .mobile-category-container .mobile-category-tab .mobile-category-title {
+          display: flex;
+          justify-content: space-between;
+          align-items: center; }
+          .footer .mobile-category-container .mobile-category-tab .mobile-category-title span {
+            font-family: "Vida33Pro";
+            color: #000; }
+          .footer .mobile-category-container .mobile-category-tab .mobile-category-title .open-category {
+            transform: rotate(180deg); }
+        .footer .mobile-category-container .mobile-category-tab .mobile-category-content {
+          display: none; }
+        .footer .mobile-category-container .mobile-category-tab .mobile-category-open {
+          display: block !important; } }
